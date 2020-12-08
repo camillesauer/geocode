@@ -7,6 +7,18 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("channels/map")
+
+var coords = [
+    [4.141553499740439, 44.052572457451014],
+    [4.143273931900012, 44.05242402365157],
+    [4.14427862409957, 44.05275366184478],
+    [4.145185210746604, 44.05318932120335],
+    [4.143211104911643, 44.053065948966925],
+    [4.141692974609214, 44.05368666292508],
+    [4.142165043395835, 44.05420327703502]
+];
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

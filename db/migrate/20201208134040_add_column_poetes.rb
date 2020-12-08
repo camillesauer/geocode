@@ -1,0 +1,49 @@
+class AddColumnPoetes < ActiveRecord::Migration[6.0]
+  def change
+    add_column :poetes, :image_poete_1, :text
+    add_column :poetes, :image_poete_2, :text
+    add_column :poetes, :image_poete_3, :text
+    add_column :poetes, :image_poete_4, :text
+    add_column :poetes, :image_poete_5, :text
+    add_column :poetes, :image_poete_6, :text
+    add_column :poetes, :image_poete_7, :text
+    add_column :poetes, :image_poete_8, :text
+    add_column :poetes, :image_poete_9, :text
+    add_column :poetes, :image_poete_10, :text
+    add_column :poetes, :legende_image_poete_1, :text
+    add_column :poetes, :legende_image_poete_2, :text
+    add_column :poetes, :legende_image_poete_3, :text
+    add_column :poetes, :legende_image_poete_4, :text
+    add_column :poetes, :legende_image_poete_5, :text
+    add_column :poetes, :legende_image_poete_6, :text
+    add_column :poetes, :legende_image_poete_7, :text
+    add_column :poetes, :legende_image_poete_8, :text
+    add_column :poetes, :legende_image_poete_9, :text
+    add_column :poetes, :legende_image_poete_10, :text
+    add_column :poetes, :video_poete_1, :text
+    add_column :poetes, :video_poete_2, :text
+    add_column :poetes, :video_poete_3, :text
+    add_column :poetes, :video_poete_4, :text
+    add_column :poetes, :video_poete_5, :text
+    add_column :poetes, :son_poete_1, :text
+    add_column :poetes, :son_poete_2, :text
+    add_column :poetes, :son_poete_3, :text
+    add_column :poetes, :son_poete_4, :text
+    add_column :poetes, :son_poete_5, :text
+    add_column :poetes, :introduction_poete, :text
+    add_column :poetes, :paragraphe_poete_1, :text
+    add_column :poetes, :paragraphe_poete_2, :text
+    add_column :poetes, :paragraphe_poete_3, :text
+    add_column :poetes, :paragraphe_poete_4, :text
+    add_column :poetes, :paragraphe_poete_5, :text
+    add_column :poetes, :titre_poete, :text
+    add_column :poetes, :sous_titre_poete, :text
+    add_column :poetes, :date_poete, :text
+    add_column :poetes, :lieu_poete, :text
+    add_column :poetes, :lien_url_poete_1, :text
+    add_column :poetes, :lien_url_poete_2, :text
+    add_column :poetes, :lien_url_poete_3, :text
+    add_column :poetes, :lien_url_poete_4, :text
+    add_column :poetes, :lien_url_poete_5, :text
+  end
+end

@@ -1,0 +1,2 @@
+class Poete < ApplicationRecord
+end
