@@ -1,6 +1,12 @@
-<div class="map">
-  <audio src="https://res.cloudinary.com/dhvdnppdx/video/upload/v1607435578/Jasmin_fxderh.mp3" controls>
+<%= render "components/header" %>
 
-  </audio>
+<div class="flex-acceuil">
+<div id="img-accueil">
+<%= image_tag("carte.jpeg", alt: "Diogo Maia Moreira ")%>
+</div>
+
+<div class="map">
 <iframe src="https://www.google.com/maps/d/embed?mid=1SRMeoFXGFjPlXbrOt0O4jfkktMh_EX5B" width="1357" height="600"></iframe>
 </div>
+</div>
+<%= render "components/footer" %>

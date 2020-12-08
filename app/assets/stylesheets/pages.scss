@@ -1,3 +1,145 @@
 .map{
   text-align: center;
 }
+
+.footer {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
+  margin-top: 30px;
+
+}
+.menu-text{
+  font-family: 'Cabin', sans-serif;
+  display:flex;
+}
+
+.footer-shadow{
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      background: white;
+
+}
+
+.footer-shadow p{
+  text-align:center;
+  padding-bottom: 20px;
+}
+
+
+.link-footer a{
+  color:red;
+  font-size: 12px;
+  font-family: cabin;
+
+}
+
+.link-footer a:hover{
+  color:grey;
+  font-size: 12px;
+  font-family: cabin;
+  text-decoration:none;
+
+}
+
+@media (min-width: 499px) {
+.menu-resp{
+  margin-left: 80px
+}}
+
+@media (min-width: 499px) {
+.lock-item img {
+    width: 30px !important;
+    margin-left: 10px;
+  }}
+
+.flex-acceuil{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+#img-accueil img{
+  margin: 30px;
+  text-align: center !important;
+  width: 1357px !important;
+  height:600px !important;
+  object-fit:cover !important;
+}
+
+.menu-resp a{
+  color:black;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+.menu-resp button{
+  color:white;
+  background-color: red;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+@media (max-width: 600px) {
+.menu{
+ padding-left: 5px;
+
+}
+}
+
+.menu-text a{
+  margin: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+.menu-text a:hover{
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.menu {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.menu-resp button:hover{
+  color:white;
+  background-color: red;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+.menu-resp a:hover{
+  color:red;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+@media (min-width: 550px) {
+.menu-resp{
+  display:none;
+}}
+
+@media (max-width: 550px) {
+.menu-text{
+  display:none;
+}}
+
+
+.footer img {
+width: 50px;
+height: auto;
+margin:20px;
+}

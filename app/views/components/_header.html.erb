@@ -1,0 +1,25 @@
+<div class="menu">
+
+  <div class="menu-text">
+    <%= link_to 'Accueil', root_path %>
+    <%= link_to 'Trajets', trajets_path %>
+    <%= link_to 'Poètes', poetes_path %>
+    <%= link_to 'Action', actions_path %>
+  </div>
+
+
+<div class="menu-resp">
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
+  </button>
+  <div class="dropdown-menu">
+
+    <li class="dropdown-item"><%= link_to 'Accueil', root_path %></li>
+    <li class="dropdown-item"><%= link_to 'Trajets', trajets_path %></li>
+    <li class="dropdown-item"><%= link_to 'Poètes', poetes_path %></li>
+    <li class="dropdown-item"><%= link_to 'Action', actions_path %></li>
+  </div>
+</div>
+</div>
+</div>
