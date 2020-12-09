@@ -22,8 +22,16 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  <<: *default
   database: geocode_development
+
+production:
+  database: d4cv40rmp4b265
+  username: byakdlrblxdidy
+  password: 464a2609696376394989782438e9d3933bb764857db8f894b3b9cd44465e6376
+  host: ec2-34-246-141-162.eu-west-1.compute.amazonaws.com
+  adapter: postgresql
+  port: 5432
+  DATABASE_URL=: postgres://byakdlrblxdidy:464a2609696376394989782438e9d3933bb764857db8f894b3b9cd44465e6376@ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/d4cv40rmp4b265
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
