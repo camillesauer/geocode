@@ -1,2 +1,103 @@
 <%= render "components/header" %>
+
+<div class="show-trajet">
+  <h1 class="title-tr"><%= @trajet.titre_trajet %></h1>
+  <h2 class="title-ss"><%= @trajet.sous_titre_trajet %></h2>
+  <div class="date">
+    <h1 class=""> Le <%= @trajet.date_trajet%>, <%= @trajet.lieu_trajet %></h1>
+  </div>
+
+
+    <div class="info_t">
+      <%= image_tag("#{@trajet.image_trajet_1}", alt: "Diogo Maia Moreira") %>
+      <h1><%= @trajet.legende_image_trajet_1 %></h1>
+
+    </div>
+
+
+
+
+    <p class="paraph-t"><%= @trajet.paragraphe_trajet_1 %></p>
+     <audio src="<%=@trajet.son_trajet_1%>" controls>
+    </audio>
+    <p class="paraph-t"><%= @trajet.paragraphe_trajet_2 %></p>
+     <audio src="<%=@trajet.son_trajet_2%>" controls>
+    </audio>
+    <p class="paraph-t"><%= @trajet.paragraphe_trajet_3 %></p>
+     <audio src="<%=@trajet.son_trajet_3%>" controls>
+    </audio>
+    <p class="paraph-t"><%= @trajet.paragraphe_trajet_4 %></p>
+     <audio src="<%=@trajet.son_trajet_4%>" controls>
+    </audio>
+    <p class="paraph-t"><%= @trajet.paragraphe_trajet_5 %></p>
+     <audio src="<%=@trajet.son_trajet_5%>" controls>
+    </audio>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("#{@trajet.image_trajet_2}", alt: "Diogo Maia Moreira") %>
+          <h1><%= @trajet.legende_image_trajet_2 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@trajet.image_trajet_3}", alt: "Diogo Maia Moreira") %>
+          <h1 class=""><%= @trajet.legende_image_trajet_3 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@trajet.image_trajet_4}", alt: "Diogo Maia Moreira") %>
+          <h1><%= @trajet.legende_image_trajet_4 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@trajet.image_trajet_5}", alt: "Diogo Maia Moreira") %>
+          <h1><%= @trajet.legende_image_trajet_5 %></h1>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  <iframe width="930" height="560"
+    src="<%= @trajet.video_trajet_1 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+   <iframe width="930" height="560"
+    src="<%= @trajet.video_trajet_2 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+   <iframe width="930" height="560"
+    src="<%= @trajet.video_trajet_3 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+   <iframe width="930" height="560"
+    src="<%= @trajet.video_trajet_4 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+   <iframe width="930" height="560"
+    src="<%= @trajet.video_trajet_5 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
 <%= render "components/footer" %>
