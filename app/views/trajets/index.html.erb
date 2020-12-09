@@ -1,6 +1,6 @@
 <%= render "components/header" %>
 <% if user_signed_in? %>
-<div class="btn btn-dark btn-banner-p"><%= link_to "Ajouter un Trajet", new_trajet_path %></div>
+<div class="btn btn-dark btn-banner-t"><%= link_to "Ajouter un Trajet", new_trajet_path %></div>
 <% end %>
 <div class="index_2">
 
@@ -9,11 +9,11 @@
   <% @trajet.each do |trajet| %>
     <div class="trajet">
       <% if user_signed_in? %>
-        <div class ="">
-          <%= link_to 'Supprimer', trajet_path(trajet),
+        <div class ="btn-trajet">
+          <div class="btn btn-danger btn-banner-p"><%= link_to 'Supprimer', trajet_path(trajet),
             method: :delete,
-            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
-          <%= link_to "Editer", edit_trajet_path(trajet.id)%>
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></div>
+          <div class="btn btn-success btn-banner-p"><%= link_to "Editer", edit_trajet_path(trajet.id)%></div>
         </div>
       <% end %>
           <div class="img-trajet">

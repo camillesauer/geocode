@@ -118,13 +118,69 @@
 display:none;
 }
 
+.btn-banner-t{
+  font-size: 15px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+  }
+
+.btn-banner-t a{
+  font-size: 15px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+
+
+
+}
+
+
+.btn-banner-t {
+  font-size: 15px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+  margin-left: 50px;
+
+}
+.btn-banner-t a:hover{
+  font-size: 15px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+  text-decoration: none;
+}
+
+
 .btn-banner-p{
   font-size: 15px;
   font-family: cabin;
   font-weight:bold;
   color:white;
   margin-left:30px;
+  margin-right:30px;
 }
+
+.btn-trajet a{
+  font-size: 15px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+
+}
+
+.btn-trajet{
+  justify-content:space-between  !important;
+  align-items: center !important;
+  display: flex !important;
+  text-align: center;
+  margin: 20px;
+
+}
+
+
+
 
 .btn-banner-p a{
   font-size: 15px;
