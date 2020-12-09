@@ -13,6 +13,59 @@
   margin-top: 30px;
 
 }
+
+.form-inputs textarea{
+  border-radius: 10px;
+  border-color: red;
+  margin-bottom: 20px;
+}
+
+.form-inputs label{
+display:none;
+}
+
+.form-inputs h5{
+    font-size: 15px;
+  font-family: cabin;
+  font-weight:bold;
+  margin-bottom:20px;
+  justify-content:center  !important;
+  align-items: center !important;
+   display: flex !important;
+    flex-direction: column !important;
+    text-align: center;
+}
+
+.title-new{
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: cabin;
+  font-weight:bold;
+  color: red;
+  margin-bottom:20px;
+  justify-content:center  !important;
+  align-items: center !important;
+   display: flex !important;
+    flex-direction: column !important;
+    text-align: center;
+}
+
+.form-inputs div{
+      display: flex !important;
+    flex-direction: column !important;
+    justify-content:center  !important;
+  align-items: center !important;
+
+}
+
+.form-actions btn{
+      display: flex !important;
+    flex-direction: column !important;
+    justify-content:center  !important;
+  align-items: center !important;
+  text-align: center;
+
+}
 .menu-text{
   font-family: 'Cabin', sans-serif;
   display:flex;
@@ -96,6 +149,7 @@
   font-size: 20px;
 }
 
+
 .menu-text a:hover{
   font-weight: bold;
   text-decoration: none;
@@ -107,7 +161,7 @@
   background: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100px;
   padding: 0px 50px;
   color: white;

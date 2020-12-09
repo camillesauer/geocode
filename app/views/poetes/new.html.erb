@@ -1,0 +1,61 @@
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@poete) do |f| %>
+
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+          <h3 class="title-new">Ajouter un Poète</h3>
+            <%= f.input :image_poete_1 %>
+            <%= f.input :image_poete_2 %>
+            <%= f.input :image_poete_3 %>
+            <%= f.input :image_poete_4 %>
+            <%= f.input :image_poete_5 %>
+            <%= f.input :image_poete_6 %>
+            <%= f.input :image_poete_7 %>
+            <%= f.input :image_poete_8 %>
+            <%= f.input :image_poete_9 %>
+            <%= f.input :image_poete_10 %>
+            <%= f.input :legende_image_poete_1 %>
+            <%= f.input :legende_image_poete_2 %>
+            <%= f.input :legende_image_poete_3 %>
+            <%= f.input :legende_image_poete_4 %>
+            <%= f.input :legende_image_poete_5 %>
+            <%= f.input :legende_image_poete_6 %>
+            <%= f.input :legende_image_poete_7 %>
+            <%= f.input :legende_image_poete_8 %>
+            <%= f.input :legende_image_poete_9 %>
+            <%= f.input :legende_image_poete_10 %>
+            <%= f.input :video_poete_1 %>
+            <%= f.input :video_poete_2 %>
+            <%= f.input :video_poete_3 %>
+            <%= f.input :video_poete_4 %>
+            <%= f.input :video_poete_5 %>
+            <%= f.input :son_poete_1 %>
+            <%= f.input :son_poete_2 %>
+            <%= f.input :son_poete_3 %>
+            <%= f.input :son_poete_4 %>
+            <%= f.input :son_poete_5 %>
+            <%= f.input :introduction_poete %>
+            <%= f.input :paragraphe_poete_1 %>
+            <%= f.input :paragraphe_poete_2 %>
+            <%= f.input :paragraphe_poete_3 %>
+            <%= f.input :paragraphe_poete_4 %>
+            <%= f.input :paragraphe_poete_5 %>
+            <%= f.input :titre_poete %>
+            <%= f.input :sous_titre_poete %>
+            <%= f.input :date_poete %>
+            <%= f.input :lieu_poete %>
+            <%= f.input :lien_url_poete_1 %>
+            <%= f.input :lien_url_poete_2 %>
+            <%= f.input :lien_url_poete_3 %>
+            <%= f.input :lien_url_poete_4 %>
+            <%= f.input :lien_url_poete_5 %>
+         </div>
+
+         <div class="form-actions">
+           <%= f.button :submit, class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
+</div>

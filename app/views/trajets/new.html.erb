@@ -1,0 +1,90 @@
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@trajet) do |f| %>
+
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+          <h3 class="title-new">Ajouter un Trajet</h3>
+              <h5>Titre</h5>
+            <%= f.input :titre_trajet %>
+              <h5>Sous-titre</h5>
+            <%= f.input :sous_titre_trajet %>
+              <h5>Date</h5>
+            <%= f.input :date_trajet %>
+              <h5>Lieu</h5>
+            <%= f.input :lieu_trajet %>
+              <h5>Sites internets (5 liens url)</h5>
+            <%= f.input :lien_url_trajet_1 %>
+            <%= f.input :lien_url_trajet_2 %>
+            <%= f.input :lien_url_trajet_3 %>
+            <%= f.input :lien_url_trajet_4 %>
+            <%= f.input :lien_url_trajet_5 %>
+              <h5>Paragraphes</h5>
+            <%= f.input :paragraphe_trajet_1 %>
+            <%= f.input :paragraphe_trajet_2 %>
+            <%= f.input :paragraphe_trajet_3 %>
+            <%= f.input :paragraphe_trajet_4 %>
+            <%= f.input :paragraphe_trajet_5 %>
+              <h5>Image 1 (Cloudinary)</h5>
+            <%= f.input :image_trajet_1 %>
+              <h5>Légende 1</h5>
+            <%= f.input :legende_image_trajet_1 %>
+              <h5>Image 2 (Cloudinary)</h5>
+            <%= f.input :image_trajet_2 %>
+              <h5>Légende 2</h5>
+            <%= f.input :legende_image_trajet_2 %>
+            <h5>Image 3 (Cloudinary)</h5>
+            <%= f.input :image_trajet_3 %>
+              <h5>Légende 3</h5>
+             <%= f.input :legende_image_trajet_3 %>
+             <h5>Image 4 (Cloudinary)</h5>
+            <%= f.input :image_trajet_4 %>
+              <h5>Légende 4</h5>
+            <%= f.input :legende_image_trajet_4 %>
+            <h5>Image 5 (Cloudinary)</h5>
+            <%= f.input :image_trajet_5 %>
+              <h5>Légende 5</h5>
+            <%= f.input :legende_image_trajet_5 %>
+            <h5>Image 6 (Cloudinary)</h5>
+            <%= f.input :image_trajet_6 %>
+              <h5>Légende 6</h5>
+            <%= f.input :legende_image_trajet_6 %>
+            <h5>Image 7 (Cloudinary)</h5>
+            <%= f.input :image_trajet_7 %>
+              <h5>Légende 7</h5>
+            <%= f.input :legende_image_trajet_7 %>
+            <h5>Image 8 (Cloudinary)</h5>
+            <%= f.input :image_trajet_8 %>
+              <h5>Légende 8</h5>
+            <%= f.input :legende_image_trajet_8 %>
+            <h5>Image 9 (Cloudinary)</h5>
+            <%= f.input :image_trajet_9 %>
+              <h5>Légende 9</h5>
+            <%= f.input :legende_image_trajet_9 %>
+            <h5>Image 10 (Cloudinary)</h5>
+            <%= f.input :image_trajet_10 %>
+              <h5>Légende 10</h5>
+            <%= f.input :legende_image_trajet_10 %>
+            <h5>Vidéos - <br>
+            Lien Youtube / Vimeo (max 5)</h5>
+            <%= f.input :video_trajet_1 %>
+            <%= f.input :video_trajet_2 %>
+            <%= f.input :video_trajet_3 %>
+            <%= f.input :video_trajet_4 %>
+            <%= f.input :video_trajet_5 %>
+            <h5>Audio (Cloudinary)</h5>
+            <%= f.input :son_trajet_1 %>
+            <%= f.input :son_trajet_2 %>
+            <%= f.input :son_trajet_3 %>
+            <%= f.input :son_trajet_4 %>
+            <%= f.input :son_trajet_5 %>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.button :submit, class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
+</div>

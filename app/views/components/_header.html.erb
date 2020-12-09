@@ -1,4 +1,7 @@
 <div class="menu">
+  <div class="logo-qq">
+
+  </div>
 
   <div class="menu-text">
     <%= link_to 'Accueil', root_path %>
@@ -22,4 +25,15 @@
   </div>
 </div>
 </div>
+
+<% if user_signed_in? %>
+        <div class="lock-item">
+        <%= link_to(image_tag("admin2.png", alt: "Gust - all rights reserved."), destroy_user_session_path, method: :delete) %>
+        </div>
+      <% else %>
+        <div class="lock-item">
+        <%= link_to(image_tag("admin1.png", alt: "Gust - all rights reserved."), new_user_session_path) %>
+        </div>
+  <% end %>
+
 </div>

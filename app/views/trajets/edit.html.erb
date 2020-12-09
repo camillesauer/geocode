@@ -1,0 +1,59 @@
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@trajet) do |f| %>
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+           <h3 class="title-new">Modifier un trajet</h3>
+            <%= f.input :trajets, :image_trajet_1 %>
+            <%= f.input :trajets, :image_trajet_2 %>
+            <%= f.input :trajets, :image_trajet_3 %>
+            <%= f.input :trajets, :image_trajet_4 %>
+            <%= f.input :trajets, :image_trajet_5 %>
+            <%= f.input :trajets, :image_trajet_6 %>
+            <%= f.input :trajets, :image_trajet_7 %>
+            <%= f.input :trajets, :image_trajet_8 %>
+            <%= f.input :trajets, :image_trajet_9 %>
+            <%= f.input :trajets, :image_trajet_10 %>
+            <%= f.input :trajets, :legende_image_trajet_1 %>
+            <%= f.input :trajets, :legende_image_trajet_2 %>
+            <%= f.input :trajets, :legende_image_trajet_3 %>
+            <%= f.input :trajets, :legende_image_trajet_4 %>
+            <%= f.input :trajets, :legende_image_trajet_5 %>
+            <%= f.input :trajets, :legende_image_trajet_6 %>
+            <%= f.input :trajets, :legende_image_trajet_7 %>
+            <%= f.input :trajets, :legende_image_trajet_8 %>
+            <%= f.input :trajets, :legende_image_trajet_9 %>
+            <%= f.input :trajets, :legende_image_trajet_10 %>
+            <%= f.input :trajets, :video_trajet_1 %>
+            <%= f.input :trajets, :video_trajet_2 %>
+            <%= f.input :trajets, :video_trajet_3 %>
+            <%= f.input :trajets, :video_trajet_4 %>
+            <%= f.input :trajets, :video_trajet_5 %>
+            <%= f.input :trajets, :son_trajet_1 %>
+            <%= f.input :trajets, :son_trajet_2 %>
+            <%= f.input :trajets, :son_trajet_3 %>
+            <%= f.input :trajets, :son_trajet_4 %>
+            <%= f.input :trajets, :son_trajet_5 %>
+            <%= f.input :trajets, :paragraphe_trajet_1 %>
+            <%= f.input :trajets, :paragraphe_trajet_2 %>
+            <%= f.input :trajets, :paragraphe_trajet_3 %>
+            <%= f.input :trajets, :paragraphe_trajet_4 %>
+            <%= f.input :trajets, :paragraphe_trajet_5 %>
+            <%= f.input :trajets, :titre_trajet %>
+            <%= f.input :trajets, :sous_titre_trajet %>
+            <%= f.input :trajets, :date_trajet %>
+            <%= f.input :trajets, :lieu_trajet %>
+            <%= f.input :trajets, :lien_url_trajet_1 %>
+            <%= f.input :trajets, :lien_url_trajet_2 %>
+            <%= f.input :trajets, :lien_url_trajet_3 %>
+            <%= f.input :trajets, :lien_url_trajet_4 %>
+            <%= f.input :trajets, :lien_url_trajet_5 %>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.submit "Save changes", class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
