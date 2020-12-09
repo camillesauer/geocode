@@ -258,12 +258,34 @@ display:none;
 }
 
 .paraph-t{
-  width: 800px;
-  margin: 20px;
+
   padding: 20px;
   text-align:left !important;
   line-height: 30px;
 }
+
+@media screen and (min-width: 801px) {
+.paraph-t{
+width: 800px;
+height: auto;
+margin: 20px;
+}}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.paraph-t{
+width: 550px;
+height: auto;
+border-radius: 10px;
+margin-top: 30px;
+}}
+
+@media screen and (max-width: 500px) {
+.paraph-t{
+width: 270px;
+height: auto;
+border-radius: 10px;
+margin-top: 30px;
+}}
 .btn-trajet{
   justify-content:space-between  !important;
   align-items: center !important;
@@ -272,7 +294,6 @@ display:none;
   margin: 20px;
 
 }
-
 
 
 .show-trajet audio {
@@ -286,13 +307,80 @@ width: 800px;
 border-radius: 10px;
 }
 
+@media screen and (min-width: 801px) {
 .show-trajet iframe{
 box-shadow: 3px 1px 10px 2px #F2F2F2;
 margin: 30px;
 border-radius: 20px;
 width: 800px;
+}}
 
-}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.show-trajet iframe{
+box-shadow: 3px 1px 10px 2px #F2F2F2;
+margin: 30px;
+border-radius: 20px;
+width: 480px;
+height: 300px;
+}}
+
+@media screen and (max-width: 500px) {
+.show-trajet iframe{
+box-shadow: 3px 1px 10px 2px #F2F2F2;
+margin: 30px;
+border-radius: 20px;
+width: 270px;
+height: 200px;
+}}
+
+@media screen and (min-width: 801px) {
+.carousel-item img{
+border-radius: 20px;
+width: 800px;
+border-radius: 10px;
+margin-top: 30px;
+}}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.carousel-item img{
+width: 480px;
+height: 300px;
+border-radius: 10px;
+margin-top: 30px;
+}}
+
+@media screen and (max-width: 500px) {
+.carousel-item img{
+width: 270px;
+height: 200px;
+border-radius: 10px;
+margin-top: 30px;
+}}
+
+@media screen and (min-width: 801px) {
+.info_t img{
+border-radius: 20px;
+width: 800px;
+border-radius: 10px;
+margin-top: 30px;
+}}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+.info_t img{
+width: 480px;
+height: 300px;
+border-radius: 10px;
+margin-top: 30px;
+}}
+
+@media screen and (max-width: 500px) {
+.info_t img{
+width: 270px;
+height: 200px;
+border-radius: 10px;
+margin-top: 30px;
+}}
+
 
 .title-tr{
   font-size: 25px;
@@ -311,12 +399,6 @@ width: 800px;
   margin: 20px;
 }
 
-.carousel-item img{
- margin: 20px;
-width: 800px;
-border-radius: 10px;
-margin-top: 30px;
-}
 
 .info_t h1{
  font-size: 15px;
@@ -390,6 +472,7 @@ margin-top: 30px;
    display: flex !important;
     flex-direction: column !important;
     text-align: center;
+    margin-top: 40px;
 }
 
 .title-new{

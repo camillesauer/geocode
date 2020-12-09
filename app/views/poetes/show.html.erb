@@ -1,1 +1,134 @@
-show.html.erb
+<%= render "components/header" %>
+
+<div class="show-trajet">
+  <% if @poete.titre_poete != ""  %>
+  <h1 class="title-tr"><%= @poete.titre_poete %></h1>
+   <% end %>
+   <% if @poete.sous_titre_poete != ""  %>
+  <h2 class="title-ss"><%= @poete.sous_titre_poete %></h2>
+   <% end %>
+  <div class="date">
+    <h1 class=""> Le <%= @poete.date_poete%>, <%= @poete.lieu_poete %></h1>
+  </div>
+
+
+    <div class="info_t">
+      <% if @poete.legende_image_poete_1 != ""  %>
+      <%= image_tag("#{@poete.image_poete_1}", alt: "Diogo Maia Moreira") %>
+      <% end %>
+      <% if @poete.legende_image_poete_1 != ""  %>
+      <h1><%= @poete.legende_image_poete_1 %></h1>
+      <% end %>
+    </div>
+    <% if @poete.paragraphe_poete_1 != ""  %>
+    <p class="paraph-t"><%= @poete.paragraphe_poete_1 %></p>
+      <% end %>
+    <% if @poete.son_poete_1 != ""  %>
+     <audio src="<%=@poete.son_poete_1%>" controls>
+    </audio>
+    <% end %>
+    <% if @poete.paragraphe_poete_2 != ""  %>
+    <p class="paraph-t"><%= @poete.paragraphe_poete_2 %></p>
+    <% end %>
+    <% if @poete.son_poete_2 != ""  %>
+     <audio src="<%=@poete.son_poete_2%>" controls>
+    </audio>
+    <% end %>
+    <% if @poete.paragraphe_poete_3 != ""  %>
+    <p class="paraph-t"><%= @poete.paragraphe_poete_3 %></p>
+    <% end %>
+    <% if @poete.son_poete_3 != ""  %>
+     <audio src="<%=@poete.son_poete_3%>" controls>
+    </audio>
+    <% end %>
+    <% if @poete.paragraphe_poete_4 != ""  %>
+    <p class="paraph-t"><%= @poete.paragraphe_poete_4 %></p>
+    <% end %>
+    <% if @poete.son_poete_4 != ""  %>
+     <audio src="<%=@poete.son_poete_4%>" controls>
+    </audio>
+    <% end %>
+    <% if @poete.paragraphe_poete_5 != ""  %>
+    <p class="paraph-t"><%= @poete.paragraphe_poete_5 %></p>
+    <% end %>
+    <% if @poete.son_poete_5 != ""  %>
+     <audio src="<%=@poete.son_poete_5%>" controls>
+    </audio>
+    <% end %>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("#{@poete.image_poete_2}", alt: "Diogo Maia Moreira") %>
+          <h1><%= @poete.legende_image_poete_2 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@poete.image_poete_3}", alt: "Diogo Maia Moreira") %>
+          <h1 class=""><%= @poete.legende_image_poete_3 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@poete.image_poete_4}", alt: "Diogo Maia Moreira") %>
+          <h1><%= @poete.legende_image_poete_4 %></h1>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("#{@poete.image_poete_5}", alt: "Diogo Maia Moreira") %>
+          <h1><%= @poete.legende_image_poete_5 %></h1>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  <% if @poete.video_poete_1 != ""  %>
+  <iframe width="930" height="560"
+    src="<%= @poete.video_poete_1 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <% end %>
+  <% if @poete.video_poete_2 != ""  %>
+   <iframe width="930" height="560"
+    src="<%= @poete.video_poete_2 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <% end %>
+  <% if @poete.video_poete_3 != ""  %>
+   <iframe width="930" height="560"
+    src="<%= @poete.video_poete_3 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <% end %>
+  <% if @poete.video_poete_4 != ""  %>
+   <iframe width="930" height="560"
+    src="<%= @poete.video_poete_4 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <% end %>
+  <% if @poete.video_poete_5 != ""  %>
+   <iframe width="930" height="560"
+    src="<%= @poete.video_poete_5 %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <% end %>
+</div>
+
+<%= render "components/footer" %>

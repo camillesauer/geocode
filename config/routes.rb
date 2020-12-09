@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :actions, only: [:index]
 
   get    '/mentions'      => 'pages#mentions'
+  get    '/journal'      => 'pages#journal'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

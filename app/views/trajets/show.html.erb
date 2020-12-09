@@ -1,38 +1,60 @@
 <%= render "components/header" %>
 
 <div class="show-trajet">
+  <% if @trajet.titre_trajet != ""  %>
   <h1 class="title-tr"><%= @trajet.titre_trajet %></h1>
+   <% end %>
+   <% if @trajet.sous_titre_trajet != ""  %>
   <h2 class="title-ss"><%= @trajet.sous_titre_trajet %></h2>
+   <% end %>
   <div class="date">
     <h1 class=""> Le <%= @trajet.date_trajet%>, <%= @trajet.lieu_trajet %></h1>
   </div>
 
 
     <div class="info_t">
+      <% if @trajet.legende_image_trajet_1 != ""  %>
       <%= image_tag("#{@trajet.image_trajet_1}", alt: "Diogo Maia Moreira") %>
+      <% end %>
+      <% if @trajet.legende_image_trajet_1 != ""  %>
       <h1><%= @trajet.legende_image_trajet_1 %></h1>
-
+      <% end %>
     </div>
-
-
-
-
+    <% if @trajet.paragraphe_trajet_1 != ""  %>
     <p class="paraph-t"><%= @trajet.paragraphe_trajet_1 %></p>
+      <% end %>
+    <% if @trajet.son_trajet_1 != ""  %>
      <audio src="<%=@trajet.son_trajet_1%>" controls>
     </audio>
+    <% end %>
+    <% if @trajet.paragraphe_trajet_2 != ""  %>
     <p class="paraph-t"><%= @trajet.paragraphe_trajet_2 %></p>
+    <% end %>
+    <% if @trajet.son_trajet_2 != ""  %>
      <audio src="<%=@trajet.son_trajet_2%>" controls>
     </audio>
+    <% end %>
+    <% if @trajet.paragraphe_trajet_3 != ""  %>
     <p class="paraph-t"><%= @trajet.paragraphe_trajet_3 %></p>
+    <% end %>
+    <% if @trajet.son_trajet_3 != ""  %>
      <audio src="<%=@trajet.son_trajet_3%>" controls>
     </audio>
+    <% end %>
+    <% if @trajet.paragraphe_trajet_4 != ""  %>
     <p class="paraph-t"><%= @trajet.paragraphe_trajet_4 %></p>
+    <% end %>
+    <% if @trajet.son_trajet_4 != ""  %>
      <audio src="<%=@trajet.son_trajet_4%>" controls>
     </audio>
+    <% end %>
+    <% if @trajet.paragraphe_trajet_5 != ""  %>
     <p class="paraph-t"><%= @trajet.paragraphe_trajet_5 %></p>
+    <% end %>
+    <% if @trajet.son_trajet_5 != ""  %>
      <audio src="<%=@trajet.son_trajet_5%>" controls>
     </audio>
-
+    <% end %>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -67,37 +89,46 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
+  <% if @trajet.video_trajet_1 != ""  %>
   <iframe width="930" height="560"
     src="<%= @trajet.video_trajet_1 %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <% end %>
+  <% if @trajet.video_trajet_2 != ""  %>
    <iframe width="930" height="560"
     src="<%= @trajet.video_trajet_2 %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <% end %>
+  <% if @trajet.video_trajet_3 != ""  %>
    <iframe width="930" height="560"
     src="<%= @trajet.video_trajet_3 %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <% end %>
+  <% if @trajet.video_trajet_4 != ""  %>
    <iframe width="930" height="560"
     src="<%= @trajet.video_trajet_4 %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <% end %>
+  <% if @trajet.video_trajet_5 != ""  %>
    <iframe width="930" height="560"
     src="<%= @trajet.video_trajet_5 %>"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <% end %>
 </div>
 
 <%= render "components/footer" %>
