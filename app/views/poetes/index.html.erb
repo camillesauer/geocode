@@ -1,4 +1,6 @@
 <%= render "components/header" %>
-<div class="btn btn-light btn-banner-p"><%= link_to "Ajouter un Poète", new_poete_path %></div>
+<% if user_signed_in? %>
+<div class="btn btn-dark btn-banner-p"><%= link_to "Ajouter un Poète", new_poete_path %></div>
+<% end %>
 <%= render "components/footer" %>
 

@@ -1,4 +1,33 @@
 <%= render "components/header" %>
-<div class="btn btn-light btn-banner-p"><%= link_to "Ajouter un Trajet", new_trajet_path %></div>
+<% if user_signed_in? %>
+<div class="btn btn-dark btn-banner-p"><%= link_to "Ajouter un Trajet", new_trajet_path %></div>
+<% end %>
+<div class="index_2">
+
+
+<div class="display-grid-card">
+  <% @trajet.each do |trajet| %>
+    <div class="trajet">
+      <% if user_signed_in? %>
+        <div class ="">
+          <%= link_to 'Supprimer', trajet_path(trajet),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+          <%= link_to "Editer", edit_trajet_path(trajet.id)%>
+        </div>
+      <% end %>
+          <div class="img-trajet">
+            <%= link_to(image_tag("#{trajet.image_trajet_1}", alt: "Diogo Maia Moreira"), trajet_path(trajet.id)) %>
+            <h1><%= trajet.titre_trajet %></h1>
+            <div class="info_p">
+            <h4 class=""><%= trajet.date_trajet %></h4>
+            <h5 class=""><%= trajet.lieu_trajet %></h5>
+            </div>
+          </div>
+    </div>
+     <% end %>
+  </div>
+
+</div>
 <%= render "components/footer" %>
 
