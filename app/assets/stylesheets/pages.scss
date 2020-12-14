@@ -383,18 +383,21 @@ margin-top: 30px;
 
 @media screen and (min-width: 801px) {
 #journal iframe{
+margin-top: 20px;
 width: 750px;
 height: 1000px;
 }}
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
 #journal iframe{
+margin-top: 20px;
 width: 270px;
 height: 380px;
 }}
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
 #journal iframe{
+margin-top: 20px;
 width: 480px;
 height: 600px;
 }}
