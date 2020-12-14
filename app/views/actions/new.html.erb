@@ -1,0 +1,26 @@
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@action) do |f| %>
+
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+          <h3 class="title-new">Ajouter une Action</h3>
+            <h5>Titre</h5>
+            <%= f.input :titre_action%>
+            <h5>Date</h5>
+            <%= f.input :date_action %>
+            <h5>Lieu</h5>
+            <%= f.input :lieu_action %>
+            <h5>Image (lien cloudinary)</h5>
+            <%= f.input :image_action %>
+             <h5>Lien url</h5>
+            <%= f.input :lien_action %>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.button :submit, class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>

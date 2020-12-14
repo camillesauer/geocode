@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :trajets , only: [:index, :new, :create, :show, :update, :edit, :destroy]
   resources :poetes, only: [:index, :new, :create, :show, :update, :edit, :destroy]
-  resources :actions, only: [:index]
+  resources :actions, only: [:index, :new, :create, :show, :update, :edit, :destroy]
 
   get    '/mentions'      => 'pages#mentions'
   get    '/journal'      => 'pages#journal'
