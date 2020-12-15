@@ -547,7 +547,10 @@ height: 600px;
   margin: 20px;
 }
 
-
+.container-m{
+  text-align:center;
+  padding:20px;
+}
 .info_t h1{
  font-size: 15px;
   font-family: cabin;
@@ -577,6 +580,13 @@ height: 600px;
 
 }
 
+.intro-m{
+  font-size: 18px;
+  font-family: cabin;
+  line-height: 38px;
+  color:black;
+
+}
 .flex{
   display:flex;
   flex-direction: column;
@@ -597,6 +607,14 @@ height: 600px;
 }
 
 .contact-flex{
+  display:flex;
+  flex-direction: column;
+  justify-content:center !important;
+  align-items: center !important;
+
+}
+
+.mentions-legales{
   display:flex;
   flex-direction: column;
   justify-content:center !important;
