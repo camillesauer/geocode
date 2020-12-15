@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   get    '/mentions'      => 'pages#mentions'
   get    '/journal'      => 'pages#journal'
+  get    '/contact'      => 'pages#contact'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
