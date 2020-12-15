@@ -523,6 +523,24 @@ height: 600px;
     height: 250px !important;
 }}
 
+@media screen and (min-width: 1600px) {
+.intro-poete{
+    margin-left: 300px !important;
+    margin-right: 300px !important;
+}}
+
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
+.intro-poete{
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+}}
+
+@media screen and (min-width: 1100px) and (max-width: 1299px) {
+.intro-poete{
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+}}
+
 .title-tr{
   font-size: 25px;
   font-family: cabin;
@@ -570,6 +588,8 @@ height: 600px;
   color: grey;
   margin: 20px;
 }
+
+
 
 .intro-poete{
   font-size: 18px;
