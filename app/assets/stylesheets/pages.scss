@@ -1,5 +1,7 @@
 .map{
   text-align: center;
+  margin-bottom: 50px;
+
 }
 
 .footer {
@@ -445,17 +447,17 @@ height: 600px;
 }}
 
 @media screen and (min-width: 1400px) {
-#img-accueil img{
+#img-accueil {
 margin-top: 20px;
 width: 1357px;
-height: 1000px;
+height: 1300px;
   margin: 30px;
   text-align: center !important;
   object-fit:cover !important;
 }}
 
 @media screen and (min-width: 1100px) {
-#img-accueil img{
+#img-accueil {
 margin-top: 20px;
 width: 1000px;
 height: 600px;
@@ -465,7 +467,7 @@ height: 600px;
 }}
 
 @media screen and (min-width: 900px) and (max-width: 1099px) {
-#img-accueil img{
+#img-accueil {
 margin-top: 20px;
 width: 800px;
 height: 500px;
@@ -475,7 +477,7 @@ height: 500px;
 }}
 
 @media screen and (min-width: 801px) and (max-width: 899px) {
-#img-accueil img{
+#img-accueil {
 margin-top: 20px;
 width: 700px !important;
 height: 500px !important;
@@ -485,7 +487,7 @@ height: 500px !important;
 }}
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
-#img-accueil img{
+#img-accueil {
 margin-top: 20px;
 width: 270px;
 height: 380px;
@@ -495,7 +497,7 @@ height: 380px;
 }}
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
-#img-accueil img{
+#img-accueil {
 margin-top: 20px;
 width: 480px;
 height: 600px;
@@ -901,7 +903,7 @@ margin: 10px;
 #img-tree img{
   margin: 30px;
   text-align: center !important;
-  width: 1300px !important;
+  width: auto;
   height:auto !important;
   object-fit:cover !important;
 

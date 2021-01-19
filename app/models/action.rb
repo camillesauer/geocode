@@ -1,2 +1,2 @@
 class Action < ApplicationRecord
-end
+ end

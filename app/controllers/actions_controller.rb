@@ -13,8 +13,6 @@ class ActionsController < ApplicationController
     if @action.save!
     redirect_to actions_path(@action)
     end
-
-    # Will raise ActiveModel::ForbiddenAttributesError
   end
 
   def edit
@@ -43,6 +41,4 @@ class ActionsController < ApplicationController
   def action_params
     params.require(:action).permit(:image_action, :titre_action, :sous_titre_action, :date_action, :lieu_action, :lien_action)
   end
-
 end
-

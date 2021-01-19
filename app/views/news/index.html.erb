@@ -1,0 +1,34 @@
+<%= render "components/header" %>
+<% if user_signed_in? %>
+<div class="btn btn-dark btn-banner-p"><%= link_to "Ajouter un Poète", new_new_path %></div>
+<% end %>
+<div class="index_2">
+
+<p class="intro-poete">Le Gué-savoir s'inspire du Consistori del gay saber en 1323, ancêtre de l’Académie des jeux floraux de Toulouse,  témoignage de la dimension intrinsèquement métatextuelle et réflexive de la poésie troubadouresque, pour construire une communauté de poètes contemporains, liés entre eux par la  la notion de fraternité, fraternité de la condition humaine, mais aussi fraternité linguistique des langues romanes. Le choix des poètes porte sur leurs relations aux lieux, aux paysages, aux langues régionales qui sont à l'origine de leurs paroles poétiques. C'est une errance de poésies qui va de la Galice aux pays d'oc.</p>
+
+<div class="display-grid-card-poete">
+  <% @new.each do |new| %>
+    <div class="trajet">
+      <% if user_signed_in? %>
+        <div class ="btn-trajet">
+          <div class="btn btn-danger btn-banner-p"><%= link_to 'Supprimer', new_path(@new),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></div>
+          <div class="btn btn-success btn-banner-p"><%= link_to "Editer", edit_new_path(@new.id)%></div>
+        </div>
+      <% end %>
+          <div class="img-poete">
+            <%= link_to(image_tag("#{@new.image_new}", alt: "Diogo Maia Moreira"), new_path(@new.id)) %>
+            <h1><%= @new.titre_new %></h1>
+            <div class="info_p">
+            <h4 class=""><%= @new.date_new %></h4>
+            <h5 class=""><%= @new.lieu_new %></h5>
+            </div>
+          </div>
+    </div>
+     <% end %>
+  </div>
+
+</div>
+<%= render "components/footer" %>
+

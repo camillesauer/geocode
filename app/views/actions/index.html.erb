@@ -1,35 +1,36 @@
 <%= render "components/header" %>
-<% if user_signed_in? %>
-<div class="btn btn-dark btn-banner-p"><%= link_to "Ajouter une action", new_action_path %></div>
-<% end %>
-<div class="index_2">
-<div class="flex-acceuil">
-<div id="img-tree">
-<%= image_tag("1.jpg", alt: "Diogo Maia Moreira ")%>
-</div>
-</div>
-<div class="display-grid-card-poete">
-  <% @action.each do |action| %>
-    <div class="trajet">
-      <% if user_signed_in? %>
-        <div class ="btn-trajet">
-          <div class="btn btn-danger btn-banner-p"><%= link_to 'Supprimer', action_path(action),
-            method: :delete,
-            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></div>
-          <div class="btn btn-success btn-banner-p"><%= link_to "Editer", edit_action_path(action.id)%></div>
-        </div>
-      <% end %>
-          <div class="img-poete">
-            <%= link_to(image_tag("#{action.image_action}", alt: "Diogo Maia Moreira"), action_path(action.id)) %>
-            <h1><%= action.titre_action %></h1>
-            <div class="info_p">
-            <h4 class=""><%= action.date_action %></h4>
-            <h5 class=""><%= action.lieu_action %></h5>
-            </div>
-          </div>
-    </div>
-     <% end %>
-  </div>
+<body style="background-image: url('https://res.cloudinary.com/dft5iblyz/image/upload/v1611095330/1_jkgddt.jpg'); background-size: cover;">
+  <% if user_signed_in? %>
+  <div class="btn btn-dark btn-banner-p"><%= link_to "Ajouter une action", new_action_path %></div>
+  <% end %>
+  <div class="index_2">
+  <div class="flex-acceuil">
 
+
+
+  </div>
+  <div class="display-grid-card-poete">
+    <% @action.each do |action| %>
+      <div class="trajet">
+        <% if user_signed_in? %>
+          <div class ="btn-trajet">
+            <div class="btn btn-danger btn-banner-p"><%= link_to 'Supprimer', action_path(action),
+              method: :delete,
+              data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></div>
+            <div class="btn btn-success btn-banner-p"><%= link_to "Editer", edit_action_path(action.id)%></div>
+          </div>
+        <% end %>
+            <div class="img-poete">
+              <%= link_to(image_tag("#{action.image_action}", alt: "Diogo Maia Moreira"), action_path(action.id)) %>
+              <h1><%= action.titre_action %></h1>
+              <div class="info_p">
+              <h4 class=""><%= action.date_action %></h4>
+              <h5 class=""><%= action.lieu_action %></h5>
+              </div>
+            </div>
+      </div>
+       <% end %>
+    </div>
+</body>
 <%= render "components/footer" %>
 

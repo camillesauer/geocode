@@ -1,0 +1,24 @@
+<%= render "components/header" %>
+
+<div class="show-trajet">
+  <% if @action.titre_action != ""  %>
+  <h1 class="title-tr"><%= @action.titre_action %></h1>
+   <% end %>
+   <% if @action.sous_titre_action != ""  %>
+  <h2 class="title-ss"><%= @action.sous_titre_action %></h2>
+   <% end %>
+   <% if @action.lien_action != ""  %>
+  <h2 class="title-ss"><%= @action.lien_action %></h2>
+   <% end %>
+  <div class="date">
+    <h1 class=""> Le <%= @action.date_action%>, <%= @action.lieu_action %></h1>
+  </div>
+
+
+    <div class="info_t">
+      <% if @action.image_action != ""  %>
+      <%= image_tag("#{@action.image_action}", alt: "Diogo Maia Moreira") %>
+      <% end %>
+    </div>
+
+<%= render "components/footer" %>
