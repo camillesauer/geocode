@@ -25,7 +25,7 @@ class PressesController < ApplicationController
     @presse = Presse.find(params[:id])
     @presse.update(presse_params)
     # no need for app/views/restaurants/update.html.erb
-    redirect_to presse_path(@presse)
+    redirect_to presses_path(@presse)
   end
   def show
     @presse = Presse.find(params[:id])
@@ -34,7 +34,7 @@ class PressesController < ApplicationController
   def destroy
     @presse = Presse.find(params[:id])
     @presse.destroy
-    redirect_to poetes_path
+    redirect_to presses_path
   end
 
   private
