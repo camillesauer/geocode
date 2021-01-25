@@ -13,6 +13,8 @@ class ActionsController < ApplicationController
     if @action.save!
     redirect_to actions_path(@action)
     end
+
+    # Will raise ActiveModel::ForbiddenAttributesError
   end
 
   def edit
@@ -25,7 +27,6 @@ class ActionsController < ApplicationController
     # no need for app/views/restaurants/update.html.erb
     redirect_to action_path(@action)
   end
-
   def show
     @action = Action.find(params[:id])
  end

@@ -1,1 +1,24 @@
-show.html.erb
+<%= render "components/header" %>
+
+<div class="show-trajet">
+  <% if @new.titre_new != ""  %>
+  <h1 class="title-tr"><%= @new.titre_new %></h1>
+   <% end %>
+   <% if @new.sous_titre_new != ""  %>
+  <h2 class="title-ss"><%= @new.sous_titre_new %></h2>
+   <% end %>
+   <% if @new.lien_new != ""  %>
+  <h2 class="title-ss"><%= @new.lien_new %></h2>
+   <% end %>
+  <div class="date">
+    <h1 class=""> Le <%= @new.date_new%>, <%= @new.lieu_new %></h1>
+  </div>
+
+
+    <div class="info_t">
+      <% if @new.image_new != ""  %>
+      <%= image_tag("#{@new.image_new}", alt: "Diogo Maia Moreira") %>
+      <% end %>
+    </div>
+
+<%= render "components/footer" %>

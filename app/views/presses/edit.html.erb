@@ -1,0 +1,23 @@
+<div class="d-flex container justify-content-center display-bubble">
+    <%= simple_form_for(@presse) do |f| %>
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+           <h3 class="title-new">Modifier une presse</h3>
+            <h5>Titre</h5>
+            <%= f.input :titre_presse%>
+            <h5>Date</h5>
+            <%= f.input :date_presse %>
+            <h5>Lieu</h5>
+            <%= f.input :lieu_presse %>
+            <h5>Image (lien cloudinary)</h5>
+            <%= f.input :image_presse %>
+             <h5>Lien url</h5>
+            <%= f.input :lien_presse %>
+</div>
+         <div class="form-actions">
+           <%= f.submit "Save changes", class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
