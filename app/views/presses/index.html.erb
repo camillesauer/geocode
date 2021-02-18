@@ -16,7 +16,7 @@
           <div class="btn btn-success btn-banner-p"><%= link_to "Editer", edit_press_path(presse.id)%></div>
         </div>
       <% end %>
-          <div class="img-poete">
+          <div class="img-poetess">
             <%= link_to(image_tag("#{presse.image_presse}", alt: "Diogo Maia Moreira"), press_path(presse.id)) %>
             <h1><%= presse.titre_presse %></h1>
             <div class="info_p">

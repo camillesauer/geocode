@@ -37,7 +37,7 @@
   height: 307px;
   object-fit:cover;
   filter: brightness(80%);
-  border-radius: 10px;
+
   margin: 30px;
 
 }}
@@ -49,7 +49,7 @@
   height: 257px;
   object-fit:cover;
   filter: brightness(80%);
-  border-radius: 10px;
+
   margin: 30px;
 
 }}
@@ -171,7 +171,6 @@
   height: 307px;
   object-fit:cover;
   filter: brightness(80%);
-  border-radius: 10px;
   margin: 30px;
 
 }}
@@ -182,11 +181,29 @@
   height: 407px;
   object-fit:cover;
   filter: brightness(80%);
-  border-radius: 10px;
   margin: 30px;
 
 }
 
+@media screen and (max-width: 550px) {
+.img-poetess img{
+  width: 257px;
+  height: 257px;
+  object-fit:cover;
+  filter: brightness(80%);
+  margin: 30px;
+
+}}
+
+
+.img-poetess img{
+  width: 257px;
+  height: 257px;
+  object-fit:cover;
+  filter: brightness(80%);
+  margin: 30px;
+
+}
 
 .img-poete h1{
   bottom: 127px;
@@ -218,8 +235,39 @@
   font-weight:bold;
   color:white;
 }
+
+.img-poetess h1{
+  bottom: 127px;
+  left: 50px;
+  position: relative;
+  font-size: 18px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+  text-transform: uppercase;;
+}
+
+.img-poetess h5{
+  bottom: 122px;
+  left: 50px;
+  position: relative;
+  font-size: 18px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+}
+
+.img-poetess h4{
+  bottom: 122px;
+  left: 50px;
+  position: relative;
+  font-size: 18px;
+  font-family: cabin;
+  font-weight:bold;
+  color:white;
+}
 .form-inputs textarea{
-  border-radius: 10px;
+
   border-color: red;
   margin-bottom: 20px;
 }
@@ -526,7 +574,7 @@ height: 600px;
 @media screen and (min-width: 900px) {
 .flex input{
   border: solid 2px red;
-    border-radius: 10px;
+
     margin: 20px;
     padding: 10px;
     width: 500px !important;
@@ -535,7 +583,7 @@ height: 600px;
 @media screen and (min-width: 900px) {
 .flex textarea{
   border: solid 2px red;
-    border-radius: 10px;
+
     margin: 20px;
     padding: 10px;
     width: 500px !important;
@@ -663,7 +711,7 @@ height: 600px;
 
 .flex input{
   border: solid 2px red;
-    border-radius: 10px;
+
     margin: 20px;
     padding: 10px;
     width: 270px;
@@ -671,7 +719,7 @@ height: 600px;
 
 .flex textarea{
   border: solid 2px red;
-    border-radius: 10px;
+
     margin: 20px;
     padding: 10px;
     width: 270px;
