@@ -1,4 +1,4 @@
-.map{
+.map {
   text-align: center;
   margin-bottom: 50px;
 
@@ -15,6 +15,163 @@
   margin-top: 30px;
 
 }
+
+
+
+@media screen and (min-width: 101px) and (max-width: 200px) {
+#container-banner img {
+    width: 200px !important;
+    height:auto;
+}}
+
+@media screen and (min-width: 201px) and (max-width: 300px) {
+#container-banner img {
+    width: 300px !important;
+    height:auto;
+}}
+
+@media screen and (min-width: 301px) and (max-width: 400px) {
+#container-banner img {
+    width: 400px !important;
+    height:auto;
+}}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+#container-banner img {
+    width: 500px !important;
+    height:auto;
+}}
+
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+#container-banner img {
+    width: 600px !important;
+    height:auto;
+}}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+#container-banner img {
+    width: 700px !important;
+    height:auto;
+}}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+#container-banner img {
+    width: 800px !important;
+}}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+#container-banner img {
+    width: 900px !important;
+}}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+#container-banner img {
+    width: 1000px !important;
+}}
+
+@media screen and (min-width: 1001px) and (max-width: 1100px) {
+#container-banner img {
+    width: 1100px !important;
+}}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+#container-banner img {
+    width: 1200px !important;
+}}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+#container-banner img {
+    width: 1300px !important;
+}}
+
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+#container-banner img {
+    width: 1400px !important;
+}}
+
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+#container-banner img {
+    width: 1500px !important;
+}}
+
+@media screen and (min-width: 1501px) and (max-width: 1600px) {
+#container-banner img {
+    width: 1600px !important;
+}}
+
+@media screen and (min-width: 1601px) and (max-width: 1700px) {
+#container-banner img {
+    width: 1700px !important;
+}}
+
+@media screen and (min-width: 1701px) and (max-width: 1800px) {
+#container-banner img {
+    width: 1800px !important;
+}}
+
+@media screen and (min-width: 1801px) and (max-width: 1900px) {
+#container-banner img {
+    width: 1900px !important;
+}}
+
+@media screen and (min-width: 1901px) and (max-width: 2000px) {
+#container-banner img {
+    width: 2000px !important;
+}}
+
+@media screen and (min-width: 2001px) and (max-width: 2100px) {
+#container-banner img {
+    width: 2100px !important;
+}}
+
+@media screen and (min-width: 2101px) and (max-width: 2200px) {
+#container-banner img {
+    width: 2200px !important;
+}}
+
+@media screen and (min-width: 2201px) and (max-width: 2300px) {
+#container-banner img {
+    width: 2300px !important;
+}}
+
+@media screen and (min-width: 2301px) and (max-width: 2400px) {
+#container-banner img {
+    width: 2400px !important;
+}}
+
+@media screen and (min-width: 2401px) and (max-width: 2500px) {
+#container-banner img {
+    width: 2500px !important;
+}}
+
+@media screen and (min-width: 2501px) and (max-width: 2600px) {
+#container-banner img {
+    width: 2600px !important;
+}}
+
+@media screen and (min-width: 2601px) and (max-width: 2700px) {
+#container-banner img {
+    width: 2700px !important;
+}}
+
+@media screen and (min-width: 2701px) and (max-width: 2800px) {
+#container-banner img {
+    width: 2800px !important;
+}}
+
+@media screen and (min-width: 2801px) and (max-width: 2900px) {
+#container-banner img {
+    width: 2900px !important;
+}}
+
+@media screen and (min-width: 2901px) and (max-width: 3000px) {
+#container-banner img {
+    width: 3000px !important;
+}}
+
+
+
 
 
 @media screen and (max-width: 550px) {
@@ -338,6 +495,7 @@ height: auto;
 margin: 20px;
 }}
 
+
 @media screen and (min-width: 501px) and (max-width: 800px) {
 .paraph-t{
 width: 550px;
@@ -471,6 +629,7 @@ height: 600px;
 
 @media screen and (min-width: 1400px) {
 .map iframe{
+justify-content:center !important;
 margin-top: 20px;
 width: 1357px;
 height: 1000px;
@@ -478,6 +637,7 @@ height: 1000px;
 
 @media screen and (min-width: 1100px) {
 .map iframe{
+justify-content:center !important;
 margin-top: 20px;
 width: 1000px;
 height: 600px;
@@ -485,6 +645,7 @@ height: 600px;
 
 @media screen and (min-width: 900px) and (max-width: 1099px) {
 .map iframe{
+justify-content:center !important;
 margin-top: 20px;
 width: 800px;
 height: 500px;
@@ -492,6 +653,7 @@ height: 500px;
 
 @media screen and (min-width: 801px) and (max-width: 899px) {
 .map iframe{
+justify-content:center !important;
 margin-top: 20px;
 width: 700px;
 height: 500px;
@@ -499,6 +661,7 @@ height: 500px;
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
 .map iframe{
+justify-content:center !important;
 margin-top: 20px;
 width: 270px;
 height: 380px;
@@ -506,6 +669,7 @@ height: 380px;
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
 .map iframe{
+text-align:center !important;
 margin-top: 20px;
 width: 480px;
 height: 600px;

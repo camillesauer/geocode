@@ -2,10 +2,9 @@
 <body style="background-image: url('https://res.cloudinary.com/dft5iblyz/image/upload/v1611606286/back_rgt0vt.jpg'); background-size: cover;">
 
 <div class="map">
-<br>
-<iframe src="https://www.google.com/maps/d/u/2/embed?mid=1nF1a9thz0HBLi30WLZ9dEMmoVLlTAy-_" width="640" height="480"></iframe>
-<br>
+<iframe frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_596827?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
 </div>
+
 <% if user_signed_in? %>
 <div class="btn btn-dark btn-banner-t"><%= link_to "Ajouter un Trajet", new_trajet_path %></div>
 <% end %>

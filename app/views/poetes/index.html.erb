@@ -1,4 +1,10 @@
 <%= render "components/header" %>
+
+
+  <div id="container-banner">
+    <%=  image_tag("ptes_banniere.jpg", alt: "Diogo Maia Moreira") %>
+   </div>
+
 <% if user_signed_in? %>
 <div class="btn btn-dark btn-banner-p"><%= link_to "Ajouter un Poète", new_poete_path %></div>
 <% end %>
